@@ -26,6 +26,14 @@ export function StatisticsCard({ value }) {
         <Typography variant="h4" color="blue-gray">
           {value.description}
         </Typography>
+        <br></br>
+        <b>Reviewer Details:</b>
+        <Typography variant="h7" color="blue-gray">
+          {value.userId.userName}
+        </Typography>
+        <Typography variant="h7" color="blue-gray">
+          {value.userId.email}
+        </Typography>
       </CardBody>
     </Card>
   );
