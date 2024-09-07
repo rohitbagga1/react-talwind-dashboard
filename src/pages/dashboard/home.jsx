@@ -40,7 +40,8 @@ export function Home() {
           "http://dev.api.gateoftruths.com/api/user/get-feedback/"
         );
         const data = Array.isArray(response.data) ? response.data : response.data.data;
-
+ 
+        console.log(data)
         setStatisticsData(data);
       } catch (error) {
         console.error("Error fetching data from API", error);
